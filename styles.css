@@ -662,7 +662,12 @@ a.reading-entry-link:hover {
   }
 
   .header-top {
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .header-right {
+    align-self: flex-start;
   }
 
   .section {
