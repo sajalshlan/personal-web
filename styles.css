@@ -113,7 +113,7 @@ a:hover {
 /* ---- Header ---- */
 
 .site-header {
-  padding: 5rem 0 1.5rem;
+  padding: 7.5rem 0 1.5rem;
 }
 
 .header-top {
@@ -189,8 +189,16 @@ a:hover {
   display: flex;
   gap: 1.5rem;
   font-size: 0.95rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--border);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: var(--bg);
+  padding: 0.75rem 2.5rem;
+  border-bottom: 1px solid var(--border);
+  justify-content: center;
+  transition: background-color 0.3s ease;
 }
 
 .site-nav a {
@@ -599,6 +607,31 @@ a.reading-entry-link:hover {
   color: var(--accent);
 }
 
+.site-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.footer-text {
+  min-width: 0;
+}
+
+.footer-avatar {
+  width: 76px;
+  height: 76px;
+  border-radius: 4px;
+  object-fit: cover;
+  flex-shrink: 0;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.footer-avatar:hover {
+  opacity: 1;
+}
+
 .footer-note {
   font-size: 0.8rem;
   color: var(--text-faint);
@@ -614,6 +647,7 @@ a.reading-entry-link:hover {
   .dump-link {
     display: inline;
   }
+
 }
 
 @media (max-width: 600px) {
@@ -621,8 +655,13 @@ a.reading-entry-link:hover {
     font-size: 14.5px;
   }
 
+  .site-footer .container {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
   .site-header {
-    padding: 3rem 0 2rem;
+    padding: 5.5rem 0 1rem;
   }
 
   .site-name {
@@ -633,6 +672,7 @@ a.reading-entry-link:hover {
     gap: 1rem;
     flex-wrap: wrap;
     font-size: 0.85rem;
+    padding: 0.6rem 1.5rem;
   }
 
   .entry {
