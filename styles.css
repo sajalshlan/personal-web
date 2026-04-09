@@ -40,6 +40,7 @@
 
 html {
   min-height: 100%;
+  scroll-padding-top: 3.75rem;
 }
 
 body {
@@ -236,6 +237,10 @@ a:hover {
   margin-top: 2rem;
   margin-bottom: 0.75rem;
   color: var(--text-muted);
+}
+
+.section + .section > .subsection-title:first-child {
+  margin-top: 0;
 }
 
 /* ---- Lore ---- */

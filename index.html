@@ -17,7 +17,7 @@
   <header class="site-header">
     <div class="container">
       <div class="header-top">
-        <a href="index.html" class="site-name-link"><h1 class="site-name">sajal</h1></a>
+        <a href="#lore" class="site-name-link"><h1 class="site-name">sajal</h1></a>
         <div class="header-right">
           <div class="social-links">
             <a href="https://github.com/sajalshlan" target="_blank" rel="noopener">github</a>
@@ -30,10 +30,10 @@
       </div>
 
       <nav class="site-nav">
-        <a href="index.html" class="active">lore</a>
-        <a href="projects.html">projects</a>
-        <a href="writings.html">writings</a>
-        <a href="reading.html">reading</a>
+        <a href="#lore" class="active">lore</a>
+        <a href="#projects">projects</a>
+        <a href="#writings">writings</a>
+        <a href="#reading">reading</a>
         <a href="dump.html" class="dump-link">dump</a>
       </nav>
     </div>
@@ -41,7 +41,7 @@
 
   <main class="container">
 
-    <section class="section">
+    <section class="section" id="lore">
       <p>
         hi, i am sajal and this is the place that'll probably have all of my digital footprint? ugh okay my twitter has that. okay so maybe this is the place where i can dump my raw thoughts? got substack for that as well. umm maybe my projects? github got that. movies? well i am already very irregular at logging on letterboxd. so idk why am i creating this personal website, and it's already having an existential crisis. well i've always wanted to create one and it looks fun and having fun is legit a good use-case (a recent discovery) so here it is. why are you still here, reading this, this is the most boring section probably, go on to some other section, i am out of thoughts here.
       </p>
@@ -56,7 +56,7 @@
         <li>took our chatbots from basic RAG to full agentic workflows. MCP, tool calling, SSE streaming, the whole stack.</li>
       </ul>
 
-      <p class="work-category">side quests</p>
+      <!-- <p class="work-category">side quests</p>
       <ul class="work-list">
         <li>built, shipped, and sold cornelia - ai assistant for lawyers. contract analysis, risk assessment, doc drafting, word plugin</li>
         <li>implemented LLaMA 2 and GPT-2 from scratch - RoPE, GQA, KV cache, the whole thing</li>
@@ -65,11 +65,12 @@
 
       <p class="work-category">writing & community</p>
       <ul class="work-list">
-        <li><a href="writings.html">technical blogs</a></li>
+        <li><a href="#writings">technical blogs</a></li>
         <li>11K on twitter (<a href="https://twitter.com/SajalShlan" target="_blank" rel="noopener">@sajalshlan</a>), 1K+ gumroad sales</li>
         <li>lead at LNMHacks 6.0 (72-hour in-person hackathon), mentor at SheBuilds hackathon</li>
-      </ul>
+      </ul> -->
 
+      <span></span>
       <p class="highlight-text">
         if you're working on something hard and interesting and need someone who's obsessed, my email is right up there.
       </p>
@@ -77,7 +78,7 @@
         apart from work - movies, f1, gym, cocktails, and shitposting on my alt.
       </p>
 
-      <h3 class="subsection-title">updates</h3>
+      <!-- <h3 class="subsection-title">updates</h3>
       <ul class="updates-list">
         <li>
           <span class="update-date">aug 2024</span>
@@ -91,7 +92,7 @@
           <span class="update-date">oct 2023</span>
           <span class="update-text">full stack intern at a blockchain startup. rewrote their frontend in react and ported backend contracts to solidity.</span>
         </li>
-      </ul>
+      </ul> -->
 
       <!-- <h3 class="subsection-title">things i believe in currently</h3>
       <div class="beliefs-list-minimal">
@@ -115,8 +116,230 @@
           <p class="belief-heading">you don't get what you want, you get who you are.</p>
           <p class="belief-desc">i am going to leave this one for you to think about.</p>
         </div>
+      </div> -->
+    </section>
+
+    <section class="section" id="projects">
+      <h3 class="subsection-title">projects</h3>
+      <div class="entry-list">
+
+        <a href="https://github.com/sajalshlan/llama2-from-scratch" target="_blank" rel="noopener" class="entry">
+          <div class="entry-main">
+            <span class="entry-title">llama2 from scratch <span class="arrow">↗</span></span>
+            <span class="entry-tagline">full LLaMA 2 implementation in PyTorch - RoPE, GQA, SwiGLU, KV cache</span>
+            <span class="entry-note">first principles learnings is fun actually</span>
+          </div>
+          <div class="entry-meta">
+            <span class="entry-date">2026</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/sajalshlan/llm-from-scratch" target="_blank" rel="noopener" class="entry">
+          <div class="entry-main">
+            <span class="entry-title">transformer from scratch <span class="arrow">↗</span></span>
+            <span class="entry-tagline">GPT-2 built from scratch; architecture, training, fine-tuning - classification and instruction</span>
+            <span class="entry-note">all hail karpathy!</span>
+          </div>
+          <div class="entry-meta">
+            <span class="entry-date">2026</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/sajalshlan/cornelia-plugin" target="_blank" rel="noopener" class="entry">
+          <div class="entry-main">
+            <span class="entry-title">cornelia <span class="arrow">↗</span></span>
+            <span class="entry-tagline">AI law assistant + Word plugin - built it, shipped it, sold it</span>
+            <span class="entry-note">a side project that gave me my biggest learnings/month ratio</span>
+          </div>
+          <div class="entry-meta">
+            <span class="entry-date">2025</span>
+            <span class="entry-badge">shipped & sold</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/sajalshlan/llmd" target="_blank" rel="noopener" class="entry">
+          <div class="entry-main">
+            <span class="entry-title">llmd <span class="arrow">↗</span></span>
+            <span class="entry-tagline">one API call turns any URL into clean markdown - LLM-ready, noise-free</span>
+            <span class="entry-note">because feeding raw HTML to a model is messy, and i am lazy</span>
+          </div>
+          <div class="entry-meta">
+            <span class="entry-date">2025</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/sajalshlan/HealthCare-Chatbot" target="_blank" rel="noopener" class="entry">
+          <div class="entry-main">
+            <span class="entry-title">healthcare chatbot <span class="arrow">↗</span></span>
+            <span class="entry-tagline">locally-deployed AI that reads medical docs and answers questions about them</span>
+            <span class="entry-note">handles scanned PDFs, insurance policies, prescriptions</span>
+          </div>
+          <div class="entry-meta">
+            <span class="entry-date">2024</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/sajalshlan/BlackBox-Labs" target="_blank" rel="noopener" class="entry">
+          <div class="entry-main">
+            <span class="entry-title">blackbox labs <span class="arrow">↗</span></span>
+            <span class="entry-tagline">runs a tech twitter account while you sleep. GPT-3.5 drafts tweets on a cron schedule, routes them to discord for human approval, and only posts to twitter when you say so. also auto-replies to incoming tweets.</span>
+            <span class="entry-note">i grew my twitter from 0 to 10k in 5 months, so i kinda knew what worked and what not, so automated all of my wisedom with this.</span>
+          </div>
+          <div class="entry-meta">
+            <span class="entry-date">2023</span>
+          </div>
+        </a>
+
+        <a href="https://job-jesus.vercel.app" target="_blank" rel="noopener" class="entry">
+          <div class="entry-main">
+            <span class="entry-title">jobjesus <span class="arrow">↗</span></span>
+            <span class="entry-tagline">speaks interview questions out loud, listens to your answers, grades you at the end</span>
+            <span class="entry-note">built in a hackathon for fun, after OpenAI dropped API access</span>
+          </div>
+          <div class="entry-meta">
+            <span class="entry-date">2023</span>
+            <span class="entry-badge">live demo</span>
+          </div>
+        </a>
+
       </div>
-    </section> -->
+    </section>
+
+    <section class="section" id="writings">
+      <h3 class="subsection-title">writings</h3>
+      <div class="entry-list">
+        <a href="https://www.notion.so/Breaking-Bad-on-Fine-Tuning-an-LLM-31a62995426c80cfa05fd2beffbbc0c2" target="_blank" rel="noopener" class="entry">
+          <div class="entry-main">
+            <span class="entry-title">breaking bad on fine-tuning an llm</span>
+          </div>
+          <div class="entry-meta">
+            <span class="entry-date">2025</span>
+            <span class="entry-tag">work</span>
+          </div>
+        </a>
+        <a href="https://www.notion.so/google-vision-ocr-vs-open-source-ocrs-31a62995426c80fbaa3edfd84f793922" target="_blank" rel="noopener" class="entry">
+          <div class="entry-main">
+            <span class="entry-title">google vision ocr vs open source ocrs</span>
+          </div>
+          <div class="entry-meta">
+            <span class="entry-date">2025</span>
+            <span class="entry-tag">work</span>
+          </div>
+        </a>
+        <a href="https://www.notion.so/prompt-engineering-might-be-all-you-need-31b62995426c804b8b5ec4219021933d" target="_blank" rel="noopener" class="entry">
+          <div class="entry-main">
+            <span class="entry-title">prompt engineering might be all you need</span>
+          </div>
+          <div class="entry-meta">
+            <span class="entry-date">2025</span>
+            <span class="entry-tag">work</span>
+          </div>
+        </a>
+        <a href="https://www.notion.so/LLM-Inference-101-31b62995426c8056bb12d951750d5cf7" target="_blank" rel="noopener" class="entry">
+          <div class="entry-main">
+            <span class="entry-title">llm inference 101</span>
+          </div>
+          <div class="entry-meta">
+            <span class="entry-date">2025</span>
+            <span class="entry-tag">blog</span>
+          </div>
+        </a>
+        <a href="https://www.notion.so/Finetuning-LLMs-LoRA-QLoRA-31962995426c80169486ffb3b87b7706" target="_blank" rel="noopener" class="entry">
+          <div class="entry-main">
+            <span class="entry-title">finetuning llms — lora & qlora</span>
+          </div>
+          <div class="entry-meta">
+            <span class="entry-date">2025</span>
+            <span class="entry-tag">blog</span>
+          </div>
+        </a>
+        <a href="https://www.notion.so/Quantization-2ff62995426c804aa362fcedf0c27e58" target="_blank" rel="noopener" class="entry">
+          <div class="entry-main">
+            <span class="entry-title">quantization</span>
+          </div>
+          <div class="entry-meta">
+            <span class="entry-date">2025</span>
+            <span class="entry-tag">blog</span>
+          </div>
+        </a>
+        <a href="https://www.notion.so/ML-0439d9a6741d4600bbce744cd90b69da" target="_blank" rel="noopener" class="entry">
+          <div class="entry-main">
+            <span class="entry-title">ml</span>
+          </div>
+          <div class="entry-meta">
+            <span class="entry-date">2025</span>
+            <span class="entry-tag">personal</span>
+          </div>
+        </a>
+        <a href="https://www.notion.so/LLMs-2eb62995426c80c982f0e269c6be88d4" target="_blank" rel="noopener" class="entry">
+          <div class="entry-main">
+            <span class="entry-title">llms</span>
+          </div>
+          <div class="entry-meta">
+            <span class="entry-date">2025</span>
+            <span class="entry-tag">personal</span>
+          </div>
+        </a>
+        <a href="https://www.notion.so/LLaMA-from-scratch-30f62995426c8096bcc2e427affdccd7" target="_blank" rel="noopener" class="entry">
+          <div class="entry-main">
+            <span class="entry-title">llama from scratch</span>
+          </div>
+          <div class="entry-meta">
+            <span class="entry-date">2025</span>
+            <span class="entry-tag">personal</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="reading">
+      <h3 class="subsection-title">reading</h3>
+      <div class="reading-list">
+        <a href="https://transformer-circuits.pub/" target="_blank" rel="noopener" class="reading-entry reading-entry-link">
+          <div class="reading-main">
+            <span class="reading-title">transformer circuits</span>
+            <span class="reading-author">anthropic's interpretability research - reverse engineering transformer language models</span>
+          </div>
+          <div class="reading-meta">
+            <span class="reading-status status-current">currently reading</span>
+            <span class="entry-tag">blog</span>
+          </div>
+        </a>
+
+        <a href="https://arpitbhayani.me/blogs" target="_blank" rel="noopener" class="reading-entry reading-entry-link">
+          <div class="reading-main">
+            <span class="reading-title">arpit bhayani</span>
+            <span class="reading-author">weekly essays on system design, distributed systems, and deep dives into algorithms</span>
+          </div>
+          <div class="reading-meta">
+            <span class="reading-status status-current">currently reading</span>
+            <span class="entry-tag">blog</span>
+          </div>
+        </a>
+
+        <a href="https://www.beautyofsaas.com/p/antidote-to-slop-an-archive-of-life" target="_blank" rel="noopener" class="reading-entry reading-entry-link">
+          <div class="reading-main">
+            <span class="reading-title">beauty of saas</span>
+            <span class="reading-author">curated archive of life-changing material - writing, videos, documentaries</span>
+          </div>
+          <div class="reading-meta">
+            <span class="reading-status status-current">currently reading</span>
+            <span class="entry-tag">blog</span>
+          </div>
+        </a>
+
+        <div class="reading-entry">
+          <div class="reading-main">
+            <span class="reading-title">zen and the art of motorcycle maintenance</span>
+            <span class="reading-author">robert m. pirsig</span>
+          </div>
+          <div class="reading-meta">
+            <span class="reading-status status-current">currently reading</span>
+            <span class="entry-tag">book</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
 

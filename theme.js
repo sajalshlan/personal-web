@@ -14,5 +14,18 @@
       localStorage.setItem('theme', next);
       btn.textContent = next === 'dark' ? '☀' : '☾';
     });
+
+    const nav = document.querySelector('.site-nav');
+    if (nav && document.getElementById('lore')) {
+      function syncNavActive() {
+        const current = location.hash.slice(1) || 'lore';
+        nav.querySelectorAll('a[href^="#"]').forEach(function (a) {
+          var target = a.getAttribute('href').slice(1);
+          a.classList.toggle('active', target === current);
+        });
+      }
+      syncNavActive();
+      window.addEventListener('hashchange', syncNavActive);
+    }
   });
 })();
