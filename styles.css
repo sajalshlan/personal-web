@@ -250,6 +250,39 @@ a:hover {
   color: var(--text);
 }
 
+.work-category {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: lowercase;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-muted);
+}
+
+.subsection-title + .work-category {
+  margin-top: 0.25rem;
+}
+
+.work-list {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin: 0 0 1rem;
+}
+
+.work-list li {
+  margin-bottom: 0.55rem;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+.work-list li:last-child {
+  margin-bottom: 0;
+}
+
 .updates-list {
   list-style: none;
   padding-left: 0;
